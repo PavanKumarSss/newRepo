@@ -1,0 +1,21 @@
+package dummypom.dummypom.deletePOM;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class dss {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("myList");
+		 List<String> myList = new ArrayList<>();
+	        myList.add("mango");
+	        myList.add("orange");
+	        myList.add("Grapes");
+	        System.out.println(myList);
+	        for (String fruit : myList)
+	            System.out.println(fruit);
+
+	}
+
+}

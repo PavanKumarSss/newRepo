@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Testrunner" project="Cucumber.Project" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="Runner.Testrunner" time="12.706">
+    <testsuite name="Login to app" time="12.706">
+      <testcase name="Login to the app" classname="Login to app" time="12.706">
+        <failure>
+          <expected>Paul Collings</expected>
+          <actual>Automation 3</actual>
+          org.junit.ComparisonFailure: expected:&lt;[Paul Collings]&gt; but was:&lt;[Automation 3]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at BDD.Cucumber.Project.Pom.verifyuser(Pom.java:49)&#13;
+	at StepDefinition.login.click_on_user_and_verify(login.java:65)&#13;
+	at ✽.click on user and verify(file:///E:/ec/new/Cucumber.Project/CucuFeature/cucu.feature:8)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

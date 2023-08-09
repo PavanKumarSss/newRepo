@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Testrunner" project="Cucumber.Project" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="Runner.Testrunner" time="8.616">
+    <testsuite name="Login to app" time="8.616">
+      <testcase name="Login to the app" classname="Login to app" time="8.616">
+        <error>java.lang.NullPointerException: Cannot invoke "io.cucumber.java.Scenario.isFailed()" because "scenario" is null&#13;
+	at BDD.Cucumber.Project.Pom.captureScreenshotOnFailure(Pom.java:117)&#13;
+	at StepDefinition.login.click_on_user_and_verify(login.java:63)&#13;
+	at ✽.click on user and verify(file:///E:/ec/new/Cucumber.Project/CucuFeature/cucu.feature:8)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

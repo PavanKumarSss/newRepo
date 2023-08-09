@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-24T14:32:13 IST" name="Suite" finished-at="2023-07-24T14:33:24 IST" duration-ms="70433">
+    <groups>
+    </groups>
+    <test started-at="2023-07-24T14:32:13 IST" name="Test" finished-at="2023-07-24T14:33:24 IST" duration-ms="70433">
+      <class name="xpath.finder.xpath">
+        <test-method signature="check()[pri:0, instance:xpath.finder.xpath@78e4deb0]" started-at="2023-07-24T14:32:13 IST" name="check" finished-at="2023-07-24T14:32:20 IST" duration-ms="6680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check -->
+        <test-method is-config="true" signature="tear()[pri:0, instance:xpath.finder.xpath@78e4deb0]" started-at="2023-07-24T14:32:20 IST" name="tear" finished-at="2023-07-24T14:32:20 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+        <test-method signature="ctitle()[pri:0, instance:xpath.finder.xpath@78e4deb0]" started-at="2023-07-24T14:32:20 IST" name="ctitle" finished-at="2023-07-24T14:32:32 IST" duration-ms="11889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ctitle -->
+        <test-method is-config="true" signature="tear()[pri:0, instance:xpath.finder.xpath@78e4deb0]" started-at="2023-07-24T14:32:32 IST" name="tear" finished-at="2023-07-24T14:32:32 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+        <test-method signature="tables()[pri:0, instance:xpath.finder.xpath@78e4deb0]" started-at="2023-07-24T14:32:32 IST" name="tables" finished-at="2023-07-24T14:32:41 IST" duration-ms="8144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tables -->
+        <test-method is-config="true" signature="tear()[pri:0, instance:xpath.finder.xpath@78e4deb0]" started-at="2023-07-24T14:32:41 IST" name="tear" finished-at="2023-07-24T14:32:41 IST" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+        <test-method signature="xgoogle()[pri:0, instance:xpath.finder.xpath@78e4deb0]" started-at="2023-07-24T14:32:41 IST" name="xgoogle" finished-at="2023-07-24T14:32:47 IST" duration-ms="6261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xgoogle -->
+        <test-method is-config="true" signature="tear()[pri:0, instance:xpath.finder.xpath@78e4deb0]" started-at="2023-07-24T14:32:47 IST" name="tear" finished-at="2023-07-24T14:32:48 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+        <test-method signature="xx()[pri:0, instance:xpath.finder.xpath@78e4deb0]" started-at="2023-07-24T14:32:48 IST" name="xx" finished-at="2023-07-24T14:33:07 IST" duration-ms="19781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xx -->
+        <test-method is-config="true" signature="tear()[pri:0, instance:xpath.finder.xpath@78e4deb0]" started-at="2023-07-24T14:33:07 IST" name="tear" finished-at="2023-07-24T14:33:09 IST" duration-ms="1703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+        <test-method signature="xxtable()[pri:0, instance:xpath.finder.xpath@78e4deb0]" started-at="2023-07-24T14:33:09 IST" name="xxtable" finished-at="2023-07-24T14:33:23 IST" duration-ms="14275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xxtable -->
+        <test-method is-config="true" signature="tear()[pri:0, instance:xpath.finder.xpath@78e4deb0]" started-at="2023-07-24T14:33:23 IST" name="tear" finished-at="2023-07-24T14:33:24 IST" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- xpath.finder.xpath -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

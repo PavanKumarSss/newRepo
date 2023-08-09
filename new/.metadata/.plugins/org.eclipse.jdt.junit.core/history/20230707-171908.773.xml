@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Testrunner" project="Cucumber.Project" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="Runner.Testrunner" time="11.946">
+    <testsuite name="Login to app" time="11.946">
+      <testcase name="Login to the app" classname="Login to app" time="11.897"/>
+      <testcase name="verify user" classname="Login to app" time="0.049">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null&#13;
+	at StepDefinition.login.click_on_user_and_verify(login.java:54)&#13;
+	at ✽.click on user and verify(file:///E:/ec/new/Cucumber.Project/CucuFeature/cucu.feature:10)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

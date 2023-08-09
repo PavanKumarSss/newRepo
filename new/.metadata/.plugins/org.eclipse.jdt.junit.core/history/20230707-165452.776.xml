@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Testrunner" project="Cucumber.Project" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="Runner.Testrunner" time="12.478">
+    <testsuite name="Login to app" time="12.478">
+      <testcase name="Login to the app" classname="Login to app" time="12.435"/>
+      <testcase name="verify user" classname="Login to app" time="0.042">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at jdk.proxy2/jdk.proxy2.$Proxy22.getText(Unknown Source)&#13;
+	at BDD.Cucumber.Project.Pom.verifyuser(Pom.java:83)&#13;
+	at StepDefinition.login.click_on_user_and_verify(login.java:49)&#13;
+	at ✽.click on user and verify(file:///E:/ec/new/Cucumber.Project/CucuFeature/cucu.feature:10)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

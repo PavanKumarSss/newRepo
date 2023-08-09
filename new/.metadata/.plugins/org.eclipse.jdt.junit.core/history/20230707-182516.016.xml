@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Testrunner" project="Cucumber.Project" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="Runner.Testrunner" time="8.65">
+    <testsuite name="Login to app" time="8.65">
+      <testcase name="Login to the app" classname="Login to app" time="8.618"/>
+      <testcase name="verify user" classname="Login to app" time="0.032">
+        <error>java.lang.IllegalArgumentException: Input must be set&#13;
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)&#13;
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:94)&#13;
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:74)&#13;
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:43)&#13;
+	at StepDefinition.login.click_on_user_and_verify(login.java:61)&#13;
+	at ✽.click on user and verify(file:///E:/ec/new/Cucumber.Project/CucuFeature/cucu.feature:10)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

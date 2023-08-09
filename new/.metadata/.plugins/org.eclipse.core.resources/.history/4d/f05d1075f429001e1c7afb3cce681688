@@ -1,0 +1,175 @@
+package xpath.finder;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class xpath {
+
+	WebDriver d;
+
+//	@Test
+//	public void check() throws InterruptedException {
+//		WebDriverManager.chromedriver().setup();
+//		d = new ChromeDriver();
+//		d.get("https://www.google.com");
+//		System.out.println("running google assert = ");
+//		Thread.sleep(2000);
+//		String expected = "Google";
+//		String actual = d.getTitle();
+//		Assert.assertEquals(actual, expected);
+//		System.out.println("google assert completed = ");
+//	}
+//
+//	@Test
+//	public void ctitle() throws InterruptedException {
+//		WebDriverManager.chromedriver().setup();
+//		d = new ChromeDriver();
+//		d.get("https://www.similarweb.com/top-websites/e-commerce-and-shopping/");
+//		System.out.println("running assert = ");
+//		Thread.sleep(2000);
+//		String expected = "Top eCommerce & Shopping Websites Ranking in June 2023 | Similarweb";
+//		String actual = d.getTitle();
+//		Assert.assertEquals(actual, expected);
+//		System.out.println("completed assert = ");
+//	}
+//	
+//	@Test
+//	public void xx() throws InterruptedException {
+//		WebDriverManager.chromedriver().setup();
+//		d = new ChromeDriver();
+//		d.get("https://www.similarweb.com/top-websites/e-commerce-and-shopping/");
+//		Thread.sleep(2000);
+//		d.findElement(By.xpath("//*[@id=\"app\"]/div/header/div/div/div/div[2]/div[2]/div/a")).click();
+//		Thread.sleep(2000);
+//		d.findElement(By.xpath("//div[@class='sc-dkKxlM icoGfu']//li[5]")).click();
+//		Thread.sleep(2000);
+//	}
+	
+	
+	@Test
+	public void tables() throws InterruptedException {
+		WebDriverManager.chromedriver().setup();
+		d = new ChromeDriver();
+		d.get("https://www.w3schools.com/html/html_tables.asp");
+		Thread.sleep(2000);
+		 List <WebElement> col =d.findElements(By.xpath("//table[@id='customers']//th"));
+		 System.out.println("No of cols are : " +col.size()); 
+		 
+		 List <WebElement> colrow =d.findElements(By.xpath("//table[@id='customers']//tr"));
+		 System.out.println("No of colsrow are : " +colrow.size()); 
+		 
+		//table[@id='customers']//tr//td
+		 List <WebElement> colrowdata =d.findElements(By.xpath("//table[@id='customers']//tr//td"));
+		 System.out.println("No of colsrowdata are : " +colrowdata.size()); 
+		 
+		 System.out.println("gappppp");
+		
+		 
+//		 if(colrowdata.) {
+//			System.out.println("colrowdata.size() = "+colrowdata.size());
+//			System.out.println("colrowdata.get(7) = "+colrowdata.get(7));
+//		 }
+		 
+		//To find third row of table
+		 //WebElement baseTable = d.findElement(By.xpath("//table[@id='customers']"));
+		
+		 WebElement tableRow = d.findElement(By.xpath("//td[text()='Roland Mendel']"));
+         String rowtext = tableRow.getText();
+		 System.out.println("Third row of table : "+rowtext);
+		 
+		//*[@id="customers"]/tbody/tr[5]/td[1]
+		 WebElement tableRow1 = d.findElement(By.xpath("//*[@id=\"customers\"]/tbody/tr[5]/td[1]"));
+         String rowtext1 = tableRow1.getText();
+		 System.out.println("different row table : "+rowtext1);
+		 
+		//table[@id='customers']//tr[5]//td[3]
+		 WebElement tableRow2 = d.findElement(By.xpath("//table[@id='customers']//tr[5]//td[3]"));
+         String actual = tableRow2.getText();
+		 System.out.println("row 2 tableRow2 : "+actual);
+		 String expected="UK";
+		 SoftAssert fe=new SoftAssert();
+		 fe.assertEquals(actual, expected);
+		 //Assert.assertEquals(actual,expected);
+		 System.out.println(actual.isBlank());
+		 System.out.println(actual.isEmpty());
+
+	}
+	
+//	@Test
+//	public void xxtable(){
+//		WebDriverManager.chromedriver().setup();
+//		d = new ChromeDriver();
+//		d.get("https://demo.guru99.com/test/table.html");
+//
+//    	WebElement mytable = d.findElement(By.xpath("/html/body/table/tbody"));
+//
+//    	List < WebElement > rows_table = mytable.findElements(By.tagName("tr"));
+//
+//    	int rows_count = rows_table.size();
+////row
+//    	for (int i = 0; i < rows_count; i++) {
+//    	   
+//    	    List < WebElement > Columns_row = rows_table.get(i).findElements(By.tagName("td"));
+//    	    
+//    	    int columns_count = Columns_row.size();
+//    	    System.out.println("Number of cells In Row " + i + " are " + columns_count);
+////column	    	    
+//    	    for (int j = 0; j < columns_count; j++) {
+//    	      
+//    	        String celtext = Columns_row.get(j).getText();
+//    	        System.out.println("Cell Value of row number " + i + " and column number " + j + " Is " + celtext);
+//    	    }
+//    	    System.out.println("-------------------------------------------------- ");
+//    	}
+//	}
+	
+	
+	
+	@Test
+	public void xxtable(){
+		WebDriverManager.chromedriver().setup();
+		d = new ChromeDriver();
+		d.get("https://www.w3schools.com/html/html_tables.asp");
+
+    	WebElement mytable = d.findElement(By.xpath("//*[@id=\"customers\"]/tbody"));
+
+    	List < WebElement > rows_table = mytable.findElements(By.tagName("tr"));
+
+    	System.out.println("rows_table = "+rows_table);
+    	
+    	int rows_count = rows_table.size();
+    	System.out.println("rows_count = "+rows_count);
+//row
+    	for (int i = 0; i < rows_count; i++) {
+    	   
+    	    List < WebElement > Columns_row = rows_table.get(i).findElements(By.tagName("td"));
+    	    
+    	    int columns_count = Columns_row.size();
+    	    System.out.println("Number of cells In Row " + i + " are " + columns_count);
+//column	    	    
+    	    for (int j = 0; j < columns_count; j++) {
+    	      
+    	        String celtext = Columns_row.get(j).getText();
+    	        System.out.println("Cell Value of row number " + i + " and column number " + j + " Is " + celtext);
+    	    }
+    	    System.out.println("-------------------------------------------------- ");
+    	}
+	}
+	
+	@AfterMethod
+	public void tear() {
+		d.quit();
+	}
+
+}

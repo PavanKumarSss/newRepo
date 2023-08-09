@@ -1,0 +1,17 @@
+package dummypom.dummypom.deletePOM;
+
+public class dss {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("sadfsa");
+		 List<String> myList = new ArrayList<>();
+	        myList.add("mango");
+	        myList.add("orange");
+	        myList.add("Grapes");
+	        for (String fruit : myList)
+	            System.out.println(fruit);
+
+	}
+
+}
